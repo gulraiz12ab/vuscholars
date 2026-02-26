@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="VU Notes - Free Virtual University of Pakistan study material. Handouts, past papers, MCQs, assignments and GDBs for all VU subjects.">
+<meta name="keywords" content="VU notes, Virtual University notes, VU handouts, VU past papers, VU MCQs, VU assignments, VULMS, VU solved papers">
+<title>VU Notes – Virtual University Pakistan Free Study Material</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Lora:wght@400;600;700&display=swap" rel="stylesheet">
+<!-- AdSense: <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-XXXXXXXX" crossorigin="anonymous"></script> -->
+<style>
+:root {
+  --blue:   #1a56db;
+  --blue2:  #1e40af;
+  --sky:    #e8f0fe;
+  --green:  #059669;
+  --orange: #d97706;
+  --red:    #dc2626;
+  --purple: #7c3aed;
+  --dark:   #0f172a;
+  --gray:   #64748b;
+  --border: #e2e8f0;
+  --bg:     #f8fafc;
+  --white:  #ffffff;
+  --gold:   #f59e0b;
+}
+*{margin:0;padding:0;box-sizing:border-box;}
+body{font-family:'Nunito',sans-serif;background:var(--bg);color:var(--dark);line-height:1.6;}
+a{text-decoration:none;color:inherit;}
+
+/* ─── TOPBAR ─── */
+.topbar{background:var(--blue2);color:#bfdbfe;font-size:.75rem;padding:6px 0;text-align:center;letter-spacing:.04em;}
+.topbar a{color:#fcd34d;font-weight:700;}
+.topbar span{margin:0 10px;opacity:.5;}
+
+/* ─── HEADER ─── */
+header{background:#fff;border-bottom:3px solid var(--blue);box-shadow:0 2px 10px rgba(0,0,0,.07);position:sticky;top:0;z-index:200;}
+.hdr{max-width:1280px;margin:0 auto;padding:12px 20px;display:flex;align-items:center;gap:16px;flex-wrap:wrap;}
+.logo{display:flex;align-items:center;gap:10px;}
+.logo-icon{width:46px;height:46px;background:linear-gradient(135deg,var(--blue),var(--blue2));border-radius:10px;display:flex;align-items:center;justify-content:center;color:#fff;font-size:1.3rem;font-weight:900;font-family:'Lora',serif;flex-shrink:0;}
+.logo-text{line-height:1.1;}
+.logo-text h1{font-family:'Lora',serif;font-size:1.45rem;font-weight:700;color:var(--dark);}
+.logo-text span{font-size:.72rem;color:var(--blue);text-transform:uppercase;letter-spacing:.08em;font-weight:700;}
+nav{display:flex;gap:4px;flex-wrap:wrap;margin-left:auto;}
+nav a{padding:7px 13px;border-radius:7px;font-size:.85rem;font-weight:700;color:var(--gray);transition:.2s;}
+nav a:hover,nav a.active{background:var(--sky);color:var(--blue);}
+.search{display:flex;border:2px solid var(--border);border-radius:8px;overflow:hidden;background:var(--bg);}
+.search input{border:none;background:transparent;padding:8px 14px;font-size:.85rem;outline:none;width:210px;color:var(--dark);}
+.search button{background:var(--blue);color:#fff;border:none;padding:8px 14px;cursor:pointer;font-size:.95rem;}
+.menu-btn{display:none;background:var(--blue);color:#fff;border:none;padding:8px 12px;border-radius:7px;cursor:pointer;font-size:1.1rem;}
+@media(max-width:768px){
+  nav{display:none;width:100%;}nav.open{display:flex;flex-direction:column;}
+  .search input{width:150px;}.menu-btn{display:block;}
+}
+
+/* ─── AD BANNER ─── */
+.ad-wrap{background:#fff;border-top:1px solid var(--border);border-bottom:1px solid var(--border);display:flex;align-items:center;justify-content:center;padding:10px;}
+.ad-lb{width:728px;max-width:100%;height:90px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px dashed #93c5fd;border-radius:8px;display:flex;align-items:center;justify-content:center;color:#93c5fd;font-size:.75rem;letter-spacing:.05em;text-transform:uppercase;}
+.ad-rect{width:300px;height:250px;background:linear-gradient(135deg,#eff6ff,#dbeafe);border:2px dashed #93c5fd;border-radius:8px;display:flex;flex-direction:column;align-items:center;justify-content:center;color:#93c5fd;font-size:.75rem;letter-spacing:.05em;text-transform:uppercase;gap:4px;}
+.ad-label{font-size:.65rem;color:#cbd5e1;text-align:center;margin-top:3px;}
+
+/* ─── HERO ─── */
+.hero{background:linear-gradient(135deg,#0f172a 0%,#1e3a8a 55%,#1d4ed8 100%);color:#fff;padding:56px 20px;position:relative;overflow:hidden;}
+.hero::after{content:'';position:absolute;right:-80px;top:-80px;width:400px;height:400px;background:rgba(99,179,237,.08);border-radius:50%;}
+.hero::before{content:'';position:absolute;left:-60px;bottom:-60px;width:300px;height:300px;background:rgba(167,139,250,.07);border-radius:50%;}
+.hero-in{max-width:760px;margin:0 auto;text-align:center;position:relative;animation:fadeUp .7s ease both;}
+.hero-badge{display:inline-block;background:rgba(253,224,71,.15);border:1px solid rgba(253,224,71,.35);color:#fde047;font-size:.75rem;font-weight:700;padding:4px 14px;border-radius:20px;letter-spacing:.06em;margin-bottom:16px;text-transform:uppercase;}
+.hero h2{font-family:'Lora',serif;font-size:clamp(1.9rem,4.5vw,3rem);font-weight:700;line-height:1.2;margin-bottom:14px;}
+.hero h2 span{color:#60a5fa;}
+.hero p{font-size:1rem;opacity:.8;margin-bottom:28px;max-width:580px;margin-left:auto;margin-right:auto;}
+.hero-btns{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;}
+.btn{display:inline-block;padding:11px 26px;border-radius:8px;font-weight:800;font-size:.92rem;cursor:pointer;border:2px solid transparent;transition:.2s;}
+.btn-primary{background:var(--blue);color:#fff;}
+.btn-primary:hover{background:#1d4ed8;}
+.btn-gold{background:var(--gold);color:var(--dark);}
+.btn-gold:hover{background:#fbbf24;}
+.btn-outline{border-color:rgba(255,255,255,.4);color:#fff;}
+.btn-outline:hover{background:rgba(255,255,255,.08);}
+
+/* ─── STATS ─── */
+.stats-bar{background:#fff;border-bottom:1px solid var(--border);}
+.stats-in{max-width:1280px;margin:0 auto;padding:18px 20px;display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:16px;text-align:center;}
+.stat-n{font-family:'Lora',serif;font-size:1.9rem;font-weight:700;color:var(--blue);}
+.stat-l{font-size:.74rem;color:var(--gray);text-transform:uppercase;letter-spacing:.05em;font-weight:700;}
+
+/* ─── NOTICE STRIP ─── */
+.notice{background:linear-gradient(90deg,#fef3c7,#fffbeb);border-top:2px solid var(--gold);border-bottom:2px solid var(--gold);padding:10px 20px;overflow:hidden;}
+.notice-in{max-width:1280px;margin:0 auto;display:flex;align-items:center;gap:12px;}
+.notice-tag{background:var(--gold);color:var(--dark);font-size:.72rem;font-weight:800;padding:3px 10px;border-radius:5px;white-space:nowrap;text-transform:uppercase;}
+.ticker{overflow:hidden;flex:1;}
+.ticker-inner{display:flex;gap:32px;animation:ticker 22s linear infinite;white-space:nowrap;}
+.ticker-inner span{font-size:.84rem;font-weight:700;color:#92400e;}
+@keyframes ticker{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* ─── MAIN LAYOUT ─── */
+.main{max-width:1280px;margin:0 auto;padding:36px 20px;display:grid;grid-template-columns:1fr 310px;gap:32px;}
+@media(max-width:960px){.main{grid-template-columns:1fr;}}
+
+/* ─── SECTION HEAD ─── */
+.sec-head{display:flex;align-items:center;justify-content:space-between;margin-bottom:18px;padding-bottom:10px;border-bottom:2px solid var(--blue);}
+.sec-head h3{font-family:'Lora',serif;font-size:1.25rem;font-weight:700;color:var(--dark);}
+.sec-head h3 em{color:var(--blue);font-style:normal;}
+.see-all{font-size:.8rem;color:var(--blue);font-weight:700;}
+.see-all:hover{text-decoration:underline;}
+
+/* ─── FACULTY CARDS ─── */
+.faculty-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(200px,1fr));gap:14px;margin-bottom:36px;}
+.fac-card{background:#fff;border:1px solid var(--border);border-radius:12px;padding:20px 16px;text-align:center;display:block;transition:.2s;cursor:pointer;}
+.fac-card:hover{transform:translateY(-5px);box-shadow:0 10px 28px rgba(0,0,0,.1);border-color:var(--blue);}
+.fac-icon{font-size:2.2rem;margin-bottom:10px;}
+.fac-card h4{font-size:.92rem;font-weight:800;color:var(--dark);margin-bottom:4px;}
+.fac-card p{font-size:.76rem;color:var(--gray);}
+.fac-pill{display:inline-block;margin-top:8px;padding:2px 10px;border-radius:20px;font-size:.7rem;font-weight:700;background:var(--sky);color:var(--blue);}
+
+/* ─── NOTES CARDS ─── */
+.notes-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(270px,1fr));gap:18px;margin-bottom:36px;}
+.note-card{background:#fff;border:1px solid var(--border);border-radius:12px;overflow:hidden;display:block;transition:.2s;}
+.note-card:hover{transform:translateY(-4px);box-shadow:0 10px 28px rgba(0,0,0,.1);}
+.note-thumb{height:118px;display:flex;align-items:center;justify-content:center;font-family:'Lora',serif;font-size:1.7rem;font-weight:700;color:rgba(255,255,255,.9);}
+.note-body{padding:14px;}
+.note-tag{display:inline-block;padding:2px 9px;border-radius:20px;font-size:.69rem;font-weight:800;margin-bottom:7px;}
+.tag-cs{background:#dbeafe;color:var(--blue);}
+.tag-bba{background:#d1fae5;color:var(--green);}
+.tag-edu{background:#fce7f3;color:#be185d;}
+.tag-sci{background:#ede9fe;color:var(--purple);}
+.tag-math{background:#ffedd5;color:var(--orange);}
+.note-card h4{font-size:.92rem;font-weight:800;color:var(--dark);margin-bottom:5px;line-height:1.35;}
+.note-card p{font-size:.78rem;color:var(--gray);margin-bottom:9px;}
+.note-meta{display:flex;gap:10px;font-size:.72rem;color:#94a3b8;}
+.dl-row{display:flex;justify-content:space-between;align-items:center;margin-top:10px;padding-top:10px;border-top:1px solid var(--border);}
+.dl-btn{background:var(--blue);color:#fff;padding:5px 13px;border-radius:6px;font-size:.75rem;font-weight:700;}
+.dl-btn:hover{background:#1d4ed8;}
+
+/* ─── PAST PAPERS ─── */
+.papers-table{width:100%;border-collapse:collapse;background:#fff;border-radius:10px;overflow:hidden;border:1px solid var(--border);margin-bottom:36px;}
+.papers-table thead{background:var(--dark);color:#fff;}
+.papers-table th{padding:11px 14px;text-align:left;font-size:.8rem;font-weight:800;letter-spacing:.03em;}
+.papers-table td{padding:10px 14px;font-size:.84rem;border-bottom:1px solid var(--border);}
+.papers-table tr:last-child td{border:none;}
+.papers-table tr:hover td{background:#f0f7ff;}
+.badge{display:inline-block;padding:2px 9px;border-radius:20px;font-size:.69rem;font-weight:700;}
+.b-blue{background:#dbeafe;color:var(--blue);}
+.b-green{background:#d1fae5;color:var(--green);}
+.b-orange{background:#ffedd5;color:var(--orange);}
+.b-purple{background:#ede9fe;color:var(--purple);}
+
+/* ─── FEE TABLE ─── */
+.fee-table{width:100%;border-collapse:collapse;background:#fff;border-radius:10px;overflow:hidden;border:1px solid var(--border);margin-bottom:36px;}
+.fee-table thead{background:var(--blue);color:#fff;}
+.fee-table th{padding:11px 14px;text-align:left;font-size:.8rem;font-weight:800;}
+.fee-table td{padding:10px 14px;font-size:.84rem;border-bottom:1px solid var(--border);}
+.fee-table tr:last-child td{border:none;}
+.fee-table tr:hover td{background:#f0f7ff;}
+.fee-highlight{font-weight:800;color:var(--green);}
+
+/* ─── MCQs ─── */
+.mcq-list{display:flex;flex-direction:column;gap:14px;margin-bottom:36px;}
+.mcq-item{background:#fff;border:1px solid var(--border);border-radius:10px;padding:16px;}
+.mcq-subj{display:inline-block;font-size:.69rem;font-weight:800;padding:2px 9px;border-radius:20px;margin-bottom:8px;}
+.mcq-q{font-weight:700;font-size:.9rem;color:var(--dark);margin-bottom:10px;line-height:1.4;}
+.mcq-opts{display:grid;grid-template-columns:1fr 1fr;gap:7px;}
+.mcq-opt{padding:7px 12px;border-radius:7px;border:1.5px solid var(--border);font-size:.8rem;cursor:pointer;transition:.15s;background:var(--bg);}
+.mcq-opt:hover{border-color:var(--blue);background:#eff6ff;}
+.mcq-opt.correct{background:#d1fae5;border-color:#10b981;color:#065f46;font-weight:700;}
+
+/* ─── BLOG ─── */
+.blog-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:18px;margin-bottom:36px;}
+.blog-card{background:#fff;border:1px solid var(--border);border-radius:12px;overflow:hidden;display:block;transition:.2s;}
+.blog-card:hover{transform:translateY(-4px);box-shadow:0 10px 28px rgba(0,0,0,.08);}
+.blog-img{height:130px;display:flex;align-items:center;justify-content:center;font-size:2.8rem;}
+.blog-body{padding:14px;}
+.blog-cat{font-size:.69rem;font-weight:800;color:var(--blue);text-transform:uppercase;letter-spacing:.05em;margin-bottom:6px;}
+.blog-card h4{font-size:.92rem;font-weight:800;color:var(--dark);line-height:1.35;margin-bottom:6px;}
+.blog-card p{font-size:.78rem;color:var(--gray);}
+.blog-meta{display:flex;gap:10px;font-size:.71rem;color:#94a3b8;margin-top:8px;}
+
+/* ─── SIDEBAR ─── */
+.sidebar{display:flex;flex-direction:column;gap:24px;}
+.widget{background:#fff;border:1px solid var(--border);border-radius:12px;padding:18px;}
+.wt{font-family:'Lora',serif;font-size:1rem;font-weight:700;color:var(--dark);border-bottom:2px solid var(--blue);padding-bottom:7px;margin-bottom:14px;}
+
+.quick-links{list-style:none;display:flex;flex-direction:column;gap:8px;}
+.quick-links li a{display:flex;justify-content:space-between;align-items:center;font-size:.86rem;font-weight:600;color:var(--dark);padding:7px 10px;border-radius:7px;background:var(--bg);transition:.15s;}
+.quick-links li a:hover{background:var(--sky);color:var(--blue);}
+.quick-links li a span{color:var(--blue);font-size:1rem;}
+
+.trending-list{list-style:none;display:flex;flex-direction:column;gap:11px;}
+.trending-list li{display:flex;gap:10px;}
+.tn{min-width:24px;height:24px;background:var(--blue);color:#fff;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.7rem;font-weight:800;flex-shrink:0;}
+.ti a{font-size:.83rem;font-weight:700;color:var(--dark);line-height:1.3;display:block;}
+.ti a:hover{color:var(--blue);}
+.ti span{font-size:.71rem;color:#94a3b8;}
+
+.tags{display:flex;flex-wrap:wrap;gap:7px;}
+.tag{padding:5px 11px;border-radius:20px;font-size:.76rem;font-weight:700;background:var(--bg);border:1.5px solid var(--border);color:var(--dark);cursor:pointer;transition:.15s;}
+.tag:hover{background:var(--blue);color:#fff;border-color:var(--blue);}
+
+.prog-list{list-style:none;display:flex;flex-direction:column;gap:9px;}
+.prog-list li{display:flex;justify-content:space-between;align-items:center;font-size:.84rem;padding:7px 0;border-bottom:1px solid var(--border);}
+.prog-list li:last-child{border:none;}
+.prog-list li span:first-child{font-weight:700;color:var(--dark);}
+.prog-list li span:last-child{font-size:.72rem;font-weight:800;color:var(--green);background:#d1fae5;padding:2px 8px;border-radius:20px;}
+
+.admit-card{background:linear-gradient(135deg,var(--blue2),var(--blue));color:#fff;border-radius:12px;padding:20px;}
+.admit-card h4{font-family:'Lora',serif;font-size:1rem;font-weight:700;margin-bottom:10px;}
+.admit-card p{font-size:.82rem;opacity:.85;margin-bottom:14px;line-height:1.6;}
+.admit-card .btn-admit{display:block;background:#fde047;color:var(--dark);text-align:center;padding:9px;border-radius:8px;font-weight:800;font-size:.86rem;}
+.admit-card .btn-admit:hover{background:#fbbf24;}
+
+/* ─── ABOUT SECTION ─── */
+.about-box{background:linear-gradient(135deg,#0f172a,#1e3a8a);color:#fff;border-radius:14px;padding:32px;margin-bottom:36px;}
+.about-box h3{font-family:'Lora',serif;font-size:1.35rem;font-weight:700;margin-bottom:12px;}
+.about-box h3 span{color:#60a5fa;}
+.about-box p{font-size:.9rem;opacity:.82;line-height:1.8;margin-bottom:14px;}
+.about-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:14px;margin-top:20px;}
+.about-feat{background:rgba(255,255,255,.07);border-radius:9px;padding:14px;text-align:center;}
+.about-feat .icon{font-size:1.6rem;margin-bottom:6px;}
+.about-feat h5{font-size:.85rem;font-weight:800;color:#bfdbfe;}
+.about-feat p{font-size:.75rem;opacity:.7;margin:0;}
+
+/* ─── FOOTER ─── */
+footer{background:#0f172a;color:#94a3b8;padding:50px 20px 20px;}
+.footer-grid{max-width:1280px;margin:0 auto;display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:30px;margin-bottom:32px;}
+.fc h5{font-family:'Lora',serif;font-size:.95rem;color:#fff;margin-bottom:12px;padding-bottom:7px;border-bottom:1px solid #1e3a5f;}
+.fc ul{list-style:none;display:flex;flex-direction:column;gap:7px;}
+.fc ul li a{font-size:.82rem;color:#64748b;transition:.15s;}
+.fc ul li a:hover{color:var(--gold);}
+.footer-brand{display:flex;align-items:center;gap:9px;margin-bottom:12px;}
+.footer-brand .logo-icon{width:38px;height:38px;font-size:1.1rem;}
+.footer-brand span{font-family:'Lora',serif;font-size:1.1rem;font-weight:700;color:#fff;}
+.footer-desc{font-size:.82rem;line-height:1.7;}
+.footer-bottom{max-width:1280px;margin:0 auto;border-top:1px solid #1e3347;padding-top:16px;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;font-size:.75rem;}
+.footer-bottom a{color:var(--gold);}
+
+/* backgrounds */
+.bg-blue{background:linear-gradient(135deg,#1a56db,#1d4ed8);}
+.bg-green{background:linear-gradient(135deg,#059669,#10b981);}
+.bg-orange{background:linear-gradient(135deg,#d97706,#f59e0b);}
+.bg-purple{background:linear-gradient(135deg,#7c3aed,#a78bfa);}
+.bg-red{background:linear-gradient(135deg,#dc2626,#f87171);}
+.bg-teal{background:linear-gradient(135deg,#0d9488,#14b8a6);}
+.bg-indigo{background:linear-gradient(135deg,#4338ca,#818cf8);}
+.bg-rose{background:linear-gradient(135deg,#be123c,#fb7185);}
+
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:translateY(0)}}
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  🎓 Pakistan's #1 VU Study Resource &nbsp;<span>|</span>&nbsp;
+  Spring 2025 Admission Open &nbsp;<span>|</span>&nbsp;
+  <a href="#">Download VU Handouts & Past Papers Free →</a>
+</div>
+
+<!-- HEADER -->
+<header>
+  <div class="hdr">
+    <a href="#" class="logo">
+      <div class="logo-icon">VU</div>
+      <div class="logo-text">
+        <h1>VU Notes</h1>
+        <span>Virtual University Pakistan</span>
+      </div>
+    </a>
+    <button class="menu-btn" onclick="document.querySelector('nav').classList.toggle('open')">☰</button>
+    <nav>
+      <a href="#" class="active">Home</a>
+      <a href="#">Handouts</a>
+      <a href="#">Past Papers</a>
+      <a href="#">MCQs</a>
+      <a href="#">Assignments</a>
+      <a href="#">GDBs</a>
+      <a href="#">Admissions</a>
+    </nav>
+    <div class="search">
+      <input type="text" placeholder="Search VU subjects…">
+      <button>🔍</button>
+    </div>
+  </div>
+</header>
+
+<!-- LEADERBOARD AD -->
+<div class="ad-wrap">
+  <div class="ad-lb">Advertisement · 728×90</div>
+</div>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-in">
+    <div class="hero-badge">🏛 HEC Recognized · Est. 2002</div>
+    <h2>Free <span>Virtual University</span><br>Notes & Study Material</h2>
+    <p>Complete VU handouts, past papers, MCQs, assignments and GDB solutions — all subjects, all semesters, totally free.</p>
+    <div class="hero-btns">
+      <a href="#" class="btn btn-primary">📚 Browse Handouts</a>
+      <a href="#" class="btn btn-gold">📄 Past Papers</a>
+      <a href="#" class="btn btn-outline">🎯 MCQ Bank</a>
+    </div>
+  </div>
+</section>
+
+<!-- STATS -->
+<div class="stats-bar">
+  <div class="stats-in">
+    <div><div class="stat-n">200+</div><div class="stat-l">VU Campuses</div></div>
+    <div><div class="stat-n">2,500+</div><div class="stat-l">Free Handouts</div></div>
+    <div><div class="stat-n">15,000+</div><div class="stat-l">MCQs</div></div>
+    <div><div class="stat-n">50+</div><div class="stat-l">Programs Offered</div></div>
+    <div><div class="stat-n">500K+</div><div class="stat-l">Active Students</div></div>
+    <div><div class="stat-n">100%</div><div class="stat-l">Free Material</div></div>
+  </div>
+</div>
+
+<!-- NOTICE TICKER -->
+<div class="notice">
+  <div class="notice-in">
+    <div class="notice-tag">📢 Latest</div>
+    <div class="ticker">
+      <div class="ticker-inner">
+        <span>🔔 VU Spring 2025 Admissions Open – Last date: March 15, 2025</span>
+        <span>📝 Mid Term Exams Schedule Released – Check VULMS</span>
+        <span>🎓 New Batch: BS Computer Science, BS IT, BBA – Apply Now</span>
+        <span>📘 CS101 Midterm Past Papers Updated – 2024 Added</span>
+        <span>🏆 VU Ranked Top in HEC Category 'W' University List</span>
+        <span>💡 Free DigiSkills Courses by VU – Enroll at digiskills.pk</span>
+        <span>🔔 VU Spring 2025 Admissions Open – Last date: March 15, 2025</span>
+        <span>📝 Mid Term Exams Schedule Released – Check VULMS</span>
+        <span>🎓 New Batch: BS Computer Science, BS IT, BBA – Apply Now</span>
+        <span>📘 CS101 Midterm Past Papers Updated – 2024 Added</span>
+        <span>🏆 VU Ranked Top in HEC Category 'W' University List</span>
+        <span>💡 Free DigiSkills Courses by VU – Enroll at digiskills.pk</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- MAIN CONTENT -->
+<div class="main">
+<main>
+
+  <!-- FACULTIES -->
+  <div class="sec-head">
+    <h3>Browse by <em>Faculty</em></h3>
+    <a href="#" class="see-all">All Faculties →</a>
+  </div>
+  <div class="faculty-grid">
+    <a href="#" class="fac-card">
+      <div class="fac-icon">💻</div>
+      <h4>Computer Science & IT</h4>
+      <p>CS, IT, SE, IS programs</p>
+      <span class="fac-pill">420+ Subjects</span>
+    </a>
+    <a href="#" class="fac-card">
+      <div class="fac-icon">💼</div>
+      <h4>Business & Commerce</h4>
+      <p>BBA, MBA, MPA, MCom</p>
+      <span class="fac-pill">310+ Subjects</span>
+    </a>
+    <a href="#" class="fac-card">
+      <div class="fac-icon">🎓</div>
+      <h4>Education</h4>
+      <p>BEd, MEd, PhD Education</p>
+      <span class="fac-pill">180+ Subjects</span>
+    </a>
+    <a href="#" class="fac-card">
+      <div class="fac-icon">🧪</div>
+      <h4>Science & Technology</h4>
+      <p>Math, Statistics, Bio</p>
+      <span class="fac-pill">220+ Subjects</span>
+    </a>
+    <a href="#" class="fac-card">
+      <div class="fac-icon">📖</div>
+      <h4>Arts & Humanities</h4>
+      <p>Urdu, English, Mass Comm</p>
+      <span class="fac-pill">140+ Subjects</span>
+    </a>
+    <a href="#" class="fac-card">
+      <div class="fac-icon">⚖️</div>
+      <h4>Law & Management</h4>
+      <p>LLB, MHRM, Project Mgmt</p>
+      <span class="fac-pill">90+ Subjects</span>
+    </a>
+  </div>
+
+  <!-- IN-CONTENT AD -->
+  <div style="display:flex;justify-content:center;margin-bottom:32px;">
+    <div class="ad-lb">Advertisement · 728×90</div>
+  </div>
+
+  <!-- LATEST HANDOUTS -->
+  <div class="sec-head">
+    <h3>Latest <em>Handouts</em></h3>
+    <a href="#" class="see-all">View All →</a>
+  </div>
+  <div class="notes-grid">
+    <a href="#" class="note-card">
+      <div class="note-thumb bg-blue">CS101</div>
+      <div class="note-body">
+        <span class="note-tag tag-cs">Computer Science</span>
+        <h4>CS101 – Introduction to Computing Complete Handouts</h4>
+        <p>Full chapter-wise handouts covering computer basics, MS Office, Internet & programming fundamentals.</p>
+        <div class="note-meta"><span>📄 85 Pages</span><span>👁 28K Views</span></div>
+        <div class="dl-row"><span style="font-size:.72rem;color:#94a3b8;">Updated: Dec 2024</span><a class="dl-btn" href="#">Download</a></div>
+      </div>
+    </a>
+    <a href="#" class="note-card">
+      <div class="note-thumb bg-orange">MGT101</div>
+      <div class="note-body">
+        <span class="note-tag tag-bba">Business</span>
+        <h4>MGT101 – Financial Accounting Handouts + Notes</h4>
+        <p>Complete handouts with solved examples, journal entries, ledger, trial balance and balance sheet.</p>
+        <div class="note-meta"><span>📄 120 Pages</span><span>👁 22K Views</span></div>
+        <div class="dl-row"><span style="font-size:.72rem;color:#94a3b8;">Updated: Nov 2024</span><a class="dl-btn" href="#">Download</a></div>
+      </div>
+    </a>
+    <a href="#" class="note-card">
+      <div class="note-thumb bg-purple">CS201</div>
+      <div class="note-body">
+        <span class="note-tag tag-cs">Computer Science</span>
+        <h4>CS201 – Introduction to Programming Handouts</h4>
+        <p>C++ programming handouts with algorithms, loops, functions, arrays, pointers and solved exercises.</p>
+        <div class="note-meta"><span>📄 97 Pages</span><span>👁 31K Views</span></div>
+        <div class="dl-row"><span style="font-size:.72rem;color:#94a3b8;">Updated: Dec 2024</span><a class="dl-btn" href="#">Download</a></div>
+      </div>
+    </a>
+    <a href="#" class="note-card">
+      <div class="note-thumb bg-green">EDU301</div>
+      <div class="note-body">
+        <span class="note-tag tag-edu">Education</span>
+        <h4>EDU301 – Teaching of General Science Notes</h4>
+        <p>Complete notes on pedagogy, lesson planning, classroom management and science teaching methods.</p>
+        <div class="note-meta"><span>📄 72 Pages</span><span>👁 9K Views</span></div>
+        <div class="dl-row"><span style="font-size:.72rem;color:#94a3b8;">Updated: Oct 2024</span><a class="dl-btn" href="#">Download</a></div>
+      </div>
+    </a>
+    <a href="#" class="note-card">
+      <div class="note-thumb bg-red">MTH101</div>
+      <div class="note-body">
+        <span class="note-tag tag-math">Mathematics</span>
+        <h4>MTH101 – Calculus & Analytical Geometry Handouts</h4>
+        <p>Full handouts: limits, derivatives, integrals, sequences, series with solved numerical problems.</p>
+        <div class="note-meta"><span>📄 110 Pages</span><span>👁 18K Views</span></div>
+        <div class="dl-row"><span style="font-size:.72rem;color:#94a3b8;">Updated: Nov 2024</span><a class="dl-btn" href="#">Download</a></div>
+      </div>
+    </a>
+    <a href="#" class="note-card">
+      <div class="note-thumb bg-teal">ENG101</div>
+      <div class="note-body">
+        <span class="note-tag tag-sci">English</span>
+        <h4>ENG101 – English Comprehension & Composition</h4>
+        <p>Complete grammar rules, essay writing, comprehension passages and vocabulary for all VU students.</p>
+        <div class="note-meta"><span>📄 68 Pages</span><span>👁 15K Views</span></div>
+        <div class="dl-row"><span style="font-size:.72rem;color:#94a3b8;">Updated: Oct 2024</span><a class="dl-btn" href="#">Download</a></div>
+      </div>
+    </a>
+  </div>
+
+  <!-- PAST PAPERS TABLE -->
+  <div class="sec-head">
+    <h3>Recent <em>Past Papers</em></h3>
+    <a href="#" class="see-all">All Papers →</a>
+  </div>
+  <table class="papers-table">
+    <thead>
+      <tr><th>Subject Code</th><th>Subject Name</th><th>Type</th><th>Year</th><th>Download</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>CS101</strong></td><td>Introduction to Computing</td><td><span class="badge b-blue">Midterm</span></td><td>2024</td><td><a class="dl-btn" href="#">Download</a></td></tr>
+      <tr><td><strong>MGT101</strong></td><td>Financial Accounting</td><td><span class="badge b-green">Final</span></td><td>2024</td><td><a class="dl-btn" href="#">Download</a></td></tr>
+      <tr><td><strong>CS201</strong></td><td>Introduction to Programming</td><td><span class="badge b-blue">Midterm</span></td><td>2024</td><td><a class="dl-btn" href="#">Download</a></td></tr>
+      <tr><td><strong>MTH101</strong></td><td>Calculus & Analytical Geometry</td><td><span class="badge b-green">Final</span></td><td>2024</td><td><a class="dl-btn" href="#">Download</a></td></tr>
+      <tr><td><strong>PSY101</strong></td><td>Introduction to Psychology</td><td><span class="badge b-orange">Quiz</span></td><td>2024</td><td><a class="dl-btn" href="#">Download</a></td></tr>
+      <tr><td><strong>CS301</strong></td><td>Data Structures</td><td><span class="badge b-purple">Midterm</span></td><td>2023</td><td><a class="dl-btn" href="#">Download</a></td></tr>
+      <tr><td><strong>ECO401</strong></td><td>Economics</td><td><span class="badge b-green">Final</span></td><td>2023</td><td><a class="dl-btn" href="#">Download</a></td></tr>
+    </tbody>
+  </table>
+
+  <!-- IN-CONTENT AD -->
+  <div style="display:flex;justify-content:center;margin-bottom:32px;">
+    <div class="ad-lb">Advertisement · 728×90</div>
+  </div>
+
+  <!-- FEE STRUCTURE -->
+  <div class="sec-head">
+    <h3>VU <em>Fee Structure</em> 2025</h3>
+    <a href="#" class="see-all">Full Details →</a>
+  </div>
+  <table class="fee-table">
+    <thead>
+      <tr><th>Program</th><th>Duration</th><th>Admission Fee (One Time)</th><th>Per Semester Fee</th><th>Status</th></tr>
+    </thead>
+    <tbody>
+      <tr><td><strong>BS Computer Science</strong></td><td>4 Years</td><td>Rs. 11,500</td><td class="fee-highlight">~Rs. 17,000</td><td><span class="badge b-green">Open</span></td></tr>
+      <tr><td><strong>BS Information Technology</strong></td><td>4 Years</td><td>Rs. 11,500</td><td class="fee-highlight">~Rs. 17,000</td><td><span class="badge b-green">Open</span></td></tr>
+      <tr><td><strong>BBA (Hons)</strong></td><td>4 Years</td><td>Rs. 11,500</td><td class="fee-highlight">~Rs. 17,000</td><td><span class="badge b-green">Open</span></td></tr>
+      <tr><td><strong>MBA</strong></td><td>2 Years</td><td>Rs. 11,500</td><td class="fee-highlight">~Rs. 20,000</td><td><span class="badge b-green">Open</span></td></tr>
+      <tr><td><strong>MS / MPhil</strong></td><td>2 Years</td><td>Rs. 11,500</td><td class="fee-highlight">~Rs. 22,000</td><td><span class="badge b-blue">Entry Test</span></td></tr>
+      <tr><td><strong>PhD</strong></td><td>3–5 Years</td><td>Rs. 11,500</td><td class="fee-highlight">~Rs. 25,000</td><td><span class="badge b-orange">Entry Test 70%</span></td></tr>
+    </tbody>
+  </table>
+
+  <!-- MCQ SECTION -->
+  <div class="sec-head">
+    <h3>Practice <em>MCQs</em></h3>
+    <a href="#" class="see-all">MCQ Bank →</a>
+  </div>
+  <div class="mcq-list">
+    <div class="mcq-item">
+      <span class="mcq-subj badge b-blue">CS101</span>
+      <div class="mcq-q">Q1. Which of the following is NOT an input device?</div>
+      <div class="mcq-opts">
+        <div class="mcq-opt">A. Keyboard</div>
+        <div class="mcq-opt">B. Mouse</div>
+        <div class="mcq-opt correct">C. Monitor ✓</div>
+        <div class="mcq-opt">D. Scanner</div>
+      </div>
+    </div>
+    <div class="mcq-item">
+      <span class="mcq-subj badge b-orange">MGT101</span>
+      <div class="mcq-q">Q2. The accounting equation is: Assets = Liabilities + ________?</div>
+      <div class="mcq-opts">
+        <div class="mcq-opt">A. Revenue</div>
+        <div class="mcq-opt correct">B. Owner's Equity ✓</div>
+        <div class="mcq-opt">C. Expenses</div>
+        <div class="mcq-opt">D. Net Income</div>
+      </div>
+    </div>
+    <div class="mcq-item">
+      <span class="mcq-subj badge b-purple">CS201</span>
+      <div class="mcq-q">Q3. Which of the following is the correct syntax for a 'for' loop in C++?</div>
+      <div class="mcq-opts">
+        <div class="mcq-opt">A. for(i=0, i&lt;10, i++)</div>
+        <div class="mcq-opt correct">B. for(i=0; i&lt;10; i++) ✓</div>
+        <div class="mcq-opt">C. for(i=0; i&lt;10, i++)</div>
+        <div class="mcq-opt">D. for{i=0; i&lt;10; i++}</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT VU -->
+  <div class="about-box">
+    <h3>About <span>Virtual University of Pakistan</span></h3>
+    <p>The Virtual University of Pakistan (VU) is the country's first HEC-recognized public university built entirely on modern Information & Communication Technologies. Established in 2002 by the Government of Pakistan, VU offers affordable, world-class education through satellite TV, the Internet, and its advanced Learning Management System (VULMS). With over 200 campuses nationwide and 500,000+ enrolled students, VU is Pakistan's largest distance-learning institution.</p>
+    <p>VU degrees are fully recognized by HEC and hold the highest 'W' category ranking. Admissions open twice a year — Spring (January/February) and Fall (August/September). No entry test required for undergraduate programs.</p>
+    <div class="about-grid">
+      <div class="about-feat"><div class="icon">🏛</div><h5>Est. 2002</h5><p>Public sector non-profit</p></div>
+      <div class="about-feat"><div class="icon">✅</div><h5>HEC Category W</h5><p>Highest HEC recognition</p></div>
+      <div class="about-feat"><div class="icon">🗺</div><h5>200+ Campuses</h5><p>Nationwide coverage</p></div>
+      <div class="about-feat"><div class="icon">💰</div><h5>Rs. 17,000/sem</h5><p>Most affordable fees</p></div>
+      <div class="about-feat"><div class="icon">📡</div><h5>VULMS</h5><p>Advanced online LMS</p></div>
+      <div class="about-feat"><div class="icon">🌐</div><h5>Overseas Students</h5><p>Pakistan students abroad</p></div>
+    </div>
+  </div>
+
+  <!-- BLOG / GUIDES -->
+  <div class="sec-head">
+    <h3>Study <em>Guides & Tips</em></h3>
+    <a href="#" class="see-all">Read More →</a>
+  </div>
+  <div class="blog-grid">
+    <a href="#" class="blog-card">
+      <div class="blog-img bg-blue">📋</div>
+      <div class="blog-body">
+        <div class="blog-cat">Admission Guide</div>
+        <h4>How to Apply for VU Spring 2025 Admission — Step by Step</h4>
+        <p>Complete guide on eligibility, required documents, online application and fee submission.</p>
+        <div class="blog-meta"><span>📅 Jan 2025</span><span>⏱ 5 min read</span></div>
+      </div>
+    </a>
+    <a href="#" class="blog-card">
+      <div class="blog-img bg-green">📊</div>
+      <div class="blog-body">
+        <div class="blog-cat">Exam Tips</div>
+        <h4>VU Mid Term Exam Preparation Strategy — Score 90%+</h4>
+        <p>Proven tips for VULMS assignments, GDB participation, quiz preparation and exam revision.</p>
+        <div class="blog-meta"><span>📅 Dec 2024</span><span>⏱ 7 min read</span></div>
+      </div>
+    </a>
+    <a href="#" class="blog-card">
+      <div class="blog-img bg-purple">🎓</div>
+      <div class="blog-body">
+        <div class="blog-cat">Programs</div>
+        <h4>VU BS Computer Science vs BS IT — Which Should You Choose?</h4>
+        <p>A complete comparison of BSCS and BSIT programs, career paths, and job market in Pakistan.</p>
+        <div class="blog-meta"><span>📅 Nov 2024</span><span>⏱ 6 min read</span></div>
+      </div>
+    </a>
+  </div>
+
+</main>
+
+<!-- SIDEBAR -->
+<aside class="sidebar">
+
+  <!-- AD 300x250 -->
+  <div style="display:flex;justify-content:center;">
+    <div class="ad-rect">Advertisement<div class="ad-label">300×250</div></div>
+  </div>
+
+  <!-- QUICK ACCESS -->
+  <div class="widget">
+    <div class="wt">⚡ Quick Access</div>
+    <ul class="quick-links">
+      <li><a href="#">📘 CS101 Handouts <span>→</span></a></li>
+      <li><a href="#">📗 MGT101 Notes <span>→</span></a></li>
+      <li><a href="#">📙 CS201 Past Papers <span>→</span></a></li>
+      <li><a href="#">📕 MTH101 MCQs <span>→</span></a></li>
+      <li><a href="#">📓 ENG101 Handouts <span>→</span></a></li>
+      <li><a href="#">📒 PSY101 Notes <span>→</span></a></li>
+      <li><a href="#">🔗 VULMS Login <span>→</span></a></li>
+      <li><a href="#">📅 Exam Schedule <span>→</span></a></li>
+    </ul>
+  </div>
+
+  <!-- TRENDING -->
+  <div class="widget">
+    <div class="wt">🔥 Trending</div>
+    <ul class="trending-list">
+      <li><div class="tn">1</div><div class="ti"><a href="#">CS101 Midterm Mega File 2024</a><span>45,200 downloads</span></div></li>
+      <li><div class="tn">2</div><div class="ti"><a href="#">MGT101 Final Term Solved Papers</a><span>32,100 downloads</span></div></li>
+      <li><div class="tn">3</div><div class="ti"><a href="#">CS201 Short Questions + MCQs</a><span>28,700 downloads</span></div></li>
+      <li><div class="tn">4</div><div class="ti"><a href="#">MTH101 All Chapters Handouts</a><span>24,500 downloads</span></div></li>
+      <li><div class="tn">5</div><div class="ti"><a href="#">ECO401 Economics Complete Notes</a><span>21,800 downloads</span></div></li>
+    </ul>
+  </div>
+
+  <!-- PROGRAMS LIST -->
+  <div class="widget">
+    <div class="wt">🎓 Programs Offered</div>
+    <ul class="prog-list">
+      <li><span>BSCS</span><span>Open</span></li>
+      <li><span>BS IT</span><span>Open</span></li>
+      <li><span>BBA (Hons)</span><span>Open</span></li>
+      <li><span>MBA</span><span>Open</span></li>
+      <li><span>BS Education</span><span>Open</span></li>
+      <li><span>MS / MPhil</span><span>Entry Test</span></li>
+      <li><span>PhD</span><span>Limited</span></li>
+    </ul>
+  </div>
+
+  <!-- AD 300x250 #2 -->
+  <div style="display:flex;justify-content:center;">
+    <div class="ad-rect">Advertisement<div class="ad-label">300×250</div></div>
+  </div>
+
+  <!-- ADMISSION WIDGET -->
+  <div class="admit-card">
+    <h4>🎓 Spring 2025 Admissions</h4>
+    <p>VU Spring 2025 admissions are open. No entry test required for BS programs. Apply online or visit your nearest VU campus.</p>
+    <a href="#" class="btn-admit">Apply Now →</a>
+  </div>
+
+  <!-- TAGS -->
+  <div class="widget">
+    <div class="wt">🏷 Popular Tags</div>
+    <div class="tags">
+      <span class="tag">CS101</span><span class="tag">MGT101</span>
+      <span class="tag">CS201</span><span class="tag">MTH101</span>
+      <span class="tag">ENG101</span><span class="tag">ECO401</span>
+      <span class="tag">PSY101</span><span class="tag">CS301</span>
+      <span class="tag">Handouts</span><span class="tag">Past Papers</span>
+      <span class="tag">MCQs</span><span class="tag">GDB</span>
+      <span class="tag">Assignments</span><span class="tag">VULMS</span>
+      <span class="tag">Midterm</span><span class="tag">Final Term</span>
+      <span class="tag">BSCS</span><span class="tag">BBA</span>
+    </div>
+  </div>
+
+</aside>
+</div>
+
+<!-- BOTTOM AD -->
+<div class="ad-wrap">
+  <div class="ad-lb">Advertisement · 728×90</div>
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-grid">
+    <div class="fc">
+      <div class="footer-brand">
+        <div class="logo-icon">VU</div>
+        <span>VU Notes</span>
+      </div>
+      <p class="footer-desc">Pakistan's #1 free study resource for Virtual University students. Handouts, past papers, MCQs and assignment solutions — all subjects, all semesters.</p>
+    </div>
+    <div class="fc">
+      <h5>CS & IT</h5>
+      <ul>
+        <li><a href="#">CS101 – Intro to Computing</a></li>
+        <li><a href="#">CS201 – Programming</a></li>
+        <li><a href="#">CS301 – Data Structures</a></li>
+        <li><a href="#">CS401 – Computer Architecture</a></li>
+        <li><a href="#">CS501 – Advance Programming</a></li>
+      </ul>
+    </div>
+    <div class="fc">
+      <h5>Business & Commerce</h5>
+      <ul>
+        <li><a href="#">MGT101 – Financial Accounting</a></li>
+        <li><a href="#">MGT201 – Financial Management</a></li>
+        <li><a href="#">ECO401 – Economics</a></li>
+        <li><a href="#">MKT501 – Marketing Management</a></li>
+        <li><a href="#">HRM624 – Conflict Management</a></li>
+      </ul>
+    </div>
+    <div class="fc">
+      <h5>Resources</h5>
+      <ul>
+        <li><a href="#">All Handouts</a></li>
+        <li><a href="#">Past Papers</a></li>
+        <li><a href="#">MCQ Bank</a></li>
+        <li><a href="#">Solved Assignments</a></li>
+        <li><a href="#">GDB Solutions</a></li>
+        <li><a href="#">Lecture Videos</a></li>
+      </ul>
+    </div>
+    <div class="fc">
+      <h5>VU Info</h5>
+      <ul>
+        <li><a href="#">Admissions 2025</a></li>
+        <li><a href="#">Fee Structure</a></li>
+        <li><a href="#">Programs List</a></li>
+        <li><a href="#">VULMS Guide</a></li>
+        <li><a href="#">Scholarship Info</a></li>
+        <li><a href="#">Contact Us</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2025 VU Notes. All Rights Reserved. (Unofficial Resource Site)</span>
+    <span><a href="#">Privacy Policy</a> · <a href="#">Disclaimer</a> · <a href="#">DMCA</a></span>
+  </div>
+</footer>
+
+<script>
+// MCQ interaction
+document.querySelectorAll('.mcq-opt').forEach(opt => {
+  opt.addEventListener('click', function() {
+    const opts = this.closest('.mcq-opts').querySelectorAll('.mcq-opt');
+    opts.forEach(o => { o.style.background = ''; o.style.borderColor = ''; });
+    if (!this.classList.contains('correct')) {
+      this.style.background = '#fee2e2';
+      this.style.borderColor = '#f87171';
+    }
+  });
+});
+// Pause ticker on hover
+const ticker = document.querySelector('.ticker-inner');
+if(ticker) {
+  ticker.addEventListener('mouseenter', () => ticker.style.animationPlayState = 'paused');
+  ticker.addEventListener('mouseleave', () => ticker.style.animationPlayState = 'running');
+}
+</script>
+</body>
+</html>
